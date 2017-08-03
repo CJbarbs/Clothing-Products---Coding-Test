@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clothing Store</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='stylesheets/styles.css'>
+    <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="topper">
+          <div class="title">
+          <p>Women's Tops</p>
+          </div>
+
+          <div class="filters">
+            <div class="dropdown btn-secondary">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter Results
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a id="allFilter" class="dropdown-item" href="#">All</a>
+                <a id="saleFilter" class="dropdown-item" href="#">On sale</a>
+                <a id="exclusiveFilter" class="dropdown-item" href="#">Exclusive</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="productsGrid" class="row  row-eq-height">
+        <%- include partials/products.ejs %>
+      </div>
+    </div>
+      <script type="text/javascript" src='javascript/functions.js'></script>
+
+  </body>
+</html>

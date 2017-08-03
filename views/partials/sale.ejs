@@ -1,0 +1,16 @@
+<% for(var i = 0; i < products.length; i++) { %>
+  <% if (products[i].isSale == true) { %>
+    <div class="col-md-3 products" >
+      <img class="productImage" src="images/<%=products[i].productImage %>">
+      <% if(products[i].isSale == true) {%>
+        <p class="sale"> Sale </p>
+      <% } %>
+      <% if(products[i].isExclusive == true) {%>
+        <p class="exclusive"> Exclusive </p>
+      <% } %>
+      <p class="productName"><%= products[i].productName %></p>
+      <p class="productPrice"><%= products[i].price %></p>
+    </div>
+  <% } else { %>
+<% } %>
+<% } %>
